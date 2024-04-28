@@ -1,0 +1,205 @@
+.about-header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-header .about-header-content{
+    width: 95%;
+    height: 95%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.about-header .about-header-content .wrapper-content-about-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 3;
+    color: rgba(255, 255, 255);
+}
+.about-header .about-header-content .wrapper-content-about-header p.unseen{
+    transform: translateX(5%);
+    opacity: 0;
+}
+.about-header .about-header-content .wrapper-content-about-header p{
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.35s;
+}
+.about-header .about-header-content .wrapper-content-about-header h1.unseen{
+    transform: translateY(50%);
+    opacity: 0;
+}
+.about-header .about-header-content .wrapper-content-about-header h1{
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.25s;
+}
+.about-header .about-header-content .about-header-bg.unseen{
+    transform: scale(1.2);
+}
+.about-header .about-header-content .about-header-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/about-header-bgImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}
+.about-header-rotate-text{
+    position: absolute;
+    bottom: 3.2rem;
+    right: 0;
+    rotate: 90deg;
+    z-index: 5;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+/* section 0 */
+.about-page-section-0{
+    width: 100%;
+}
+.about-page-section-0 h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.about-page-section-0 .container-content-about-page-section-0{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-left{
+    width: 30%;
+    position: absolute;
+    transform: translateX(-85%);
+    align-self: end;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-left .content-absolute-left{
+    width: 100%;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-left .content-absolute-left p{
+    width: 80%;
+    line-height: 1.2;
+    font-family: "Mulish", sans-serif;
+    margin-bottom: .8rem;
+    padding-left: .5rem;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1s;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-left .content-absolute-left img{
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.4s;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-center{
+    width: 30%;
+    z-index: 3;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-center img{
+    transform: translateY(5%);
+    opacity: 0;
+    transition: all .6s ease-out;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-right{
+    width: 30%;
+    position: absolute;
+    transform: translateX(90%);
+    z-index: 5;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-right .content-absolute-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-right .content-absolute-right img{
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 1s;
+}
+.about-page-section-0 .container-content-about-page-section-0 .wrapper-absolute-right .content-absolute-right p{
+    width: 80%;
+    align-self: end;
+    line-height: 1.2;
+    font-family: "Mulish", sans-serif;
+    margin-top: .8rem;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 1.4s;
+}
+.about-page-section-0 .container-content-about-page-section-0 img{
+    border-radius: 1rem;
+    border: 3px solid white;
+    box-sizing: border-box;
+}
+
+.title-section-1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 7rem 0;
+}
+/* section 1 */
+.about-page-section-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+.about-page-section-1 .text-static{
+    width: 50%;
+}
+.about-page-section-1 .text-static .wrapper-static-text{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.about-page-section-1 .img-sticky{
+    width: 50%;
+}
+.about-page-section-1 .img-sticky .sticky-image{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-page-section-1 .img-sticky .sticky-image:nth-child(1){
+    background-image: url('../../img/about-food.jpg');
+    background-position: 0 70%;
+    z-index: 5;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.about-page-section-1 .img-sticky .sticky-image:nth-child(2){
+    background-image: url('../../img/about-drink.jpg');
+    background-position: 0 75%;
+    z-index: 3;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.about-page-section-1 .img-sticky .sticky-image:nth-child(3){
+    background-image: url('../../img/gallery4.jpg');
+    background-position: 0 70%;
+}

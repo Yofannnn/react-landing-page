@@ -1,0 +1,107 @@
+.menus-header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.menus-header .menus-header-container-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menus-header .menus-header-container-left .menus-header-container-left-content{
+    width: 70%;
+}
+.menus-header .menus-header-container-left .menus-header-container-left-content h1.unseen{
+    transform: translateX(20%);
+    opacity: 0;
+}
+.menus-header .menus-header-container-left .menus-header-container-left-content h1{
+    font-size: 4rem;
+    line-height: .94;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.2rem;
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+.menus-header .menus-header-container-left .menus-header-container-left-content p{
+    font-size: 1.1rem;
+}
+.menus-header h5{
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 2.5vh;
+    font-family: "Kalam", cursive;
+}
+.menus-header .menus-header-container-right{
+    width: 40%;
+    height: 100%;
+    background-image: url('../../img/menu-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+/* card menus */
+.container-card-menus{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+    gap: .5rem;
+    overflow-x: hidden;
+    container-type: inline-size;
+    margin-top: 80px;
+}
+.container-card-menus .card-product{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-card-menus .card-product .wrapped-content-product{
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.container-card-menus .card-product .wrapped-content-product img{
+    width: 100%;
+    height: fit-content;
+    /* z-index: -1; */
+}
+.container-card-menus .card-product .wrapped-content-product .wrapped-desc-product{
+    position: absolute;
+    bottom: .4rem;
+    width: 95%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: .3rem .5rem;
+}
+.container-card-menus .card-product .wrapped-content-product h1{
+    font-size: 1.1rem;
+    margin-bottom: .4rem;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+.container-card-menus .card-product .wrapped-content-product p{
+    font-size: .95rem;
+    margin-bottom: .2rem;
+    color: black;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,245 @@
+.home-header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-header .container-text{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0, .4);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-header .container-text h1.unseen{
+    transform: translateY(50%);
+    opacity: 0;
+}
+.home-header .container-text h1{
+    font-size: 15vmin;
+    text-align: center;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1s;
+}
+.home-header .container-text p.unseen{
+    transform: translateY(100%);
+    opacity: 0;
+}
+.home-header .container-text p{
+    font-size: 3vmin;
+    font-family: "Mulish" , sans-serif;
+    text-align: center;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.2s;
+}
+.home-header .container-image.unseen{
+    transform: scale(1.2);
+}
+.home-header .container-image{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: url('../img/home-header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+/* section about */
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} 
+.about .left-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.about .left-container .wrapped-image{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.about .left-container .wrapped-image img{
+    width: 100%;
+    transform: translateX(-25%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+.about .right-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.about .right-container .wrapper{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+.about .right-container .wrapper h1{
+    font-size: 2rem;
+    transform: translateX(25%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+.about .right-container .wrapper a{
+    transform: rotateX(90deg);
+    transform-origin: bottom ;
+    transition: all 1.5s;
+}
+
+/* highlight-menu */
+.highlight-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.highlight-menu .container-highlight-menu{
+    width: 95%;
+    height: 100vh;
+    margin: 3rem auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.highlight-menu .container-highlight-menu .content-highlight-menu{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .5);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.highlight-menu .container-highlight-menu .content-highlight-menu .wrapped-btn-to-menu{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.highlight-menu .container-highlight-menu .content-highlight-menu .wrapped-btn-to-menu .btn-highlight-menu{
+    display: flex;
+    width: 9vmax;
+    height: 9vmax;
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    position: relative;
+    font-size: 1.3rem;
+}
+/* border animation here */
+.btn-highlight-menu::before,
+.btn-highlight-menu::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.btn-highlight-menu-spin {
+    height: 200px;
+    width: 200px;
+}
+.btn-highlight-menu-spin::before,
+.btn-highlight-menu-spin::after {
+    top: 0;
+    left: 0;
+}
+.btn-highlight-menu-spin::before {
+    border: 2px solid transparent;
+}
+.btn-highlight-menu-spin:hover::before {
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    border-bottom-color: #0eb7da;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
+}
+.btn-highlight-menu-spin::after {
+    border: 0 solid transparent;
+}
+.btn-highlight-menu-spin:hover::after {
+    border-top: 2px solid #0eb7da;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+}
+.btn-highlight-menu-circle {
+    border-radius: 100%;
+    box-shadow: none;
+}
+.btn-highlight-menu-circle::before,
+.btn-highlight-menu-circle::after {
+    border-radius: 100%;
+}
+/* end of border animation menu */
+.highlight-menu .container-highlight-menu .content-highlight-menu .wrapped-text-highlight-menu{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.highlight-menu .container-highlight-menu .content-highlight-menu .wrapped-text-highlight-menu h1{
+    font-size: 5.5rem;
+    align-self: center;
+    margin-left: 8vmax;
+    margin-bottom: 3rem;
+}
+.highlight-menu .container-highlight-menu .content-highlight-menu .wrapped-text-highlight-menu p{
+    font-size: .95rem;
+    font-family: sans-serif;
+    font-family: "Mulish" , sans-serif;
+    line-height: 1.15;
+    width: 50%;
+    align-self: end;
+}
+.highlight-menu .container-highlight-menu .wrapped-bg-img{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/home-highlight-menus-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 66%;
+    z-index: -1;
+}
+.highlight-menu .container-highlight-menu .rotate-text{
+    position: absolute;
+    top: 4rem;
+    transform: rotate(-90deg);
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
