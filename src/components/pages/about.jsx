@@ -23,15 +23,15 @@ export default function About() {
                 <div className="wrapper-absolute-left">
                     <div className="content-absolute-left">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dolore harum eos. Modi sequi iure nihil ab aliqua.</p>
-                        <img src="../../img/about-absolute-left.jpg" alt="" style={{width: '100%'}} />
+                        <img src="./img/about-absolute-left.jpg" alt="" style={{width: '100%'}} />
                     </div>
                 </div>
                 <div className="wrapper-absolute-center">
-                    <img src="../../img/about-0-center.jpg" alt="" style={{width: '100%'}} />
+                    <img src="./img/about-0-center.jpg" alt="" style={{width: '100%'}} />
                 </div>
                 <div className="wrapper-absolute-right">
                     <div className="content-absolute-right">
-                        <img src="../../img/about-absolute-right.jpg" alt="" style={{width: '100%'}} />
+                        <img src="./img/about-absolute-right.jpg" alt="" style={{width: '100%'}} />
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis quam nobis, nihil provident dolores natus architecto? Veritatis aliquam, odio minus vel labore sint possimus .</p>
                     </div>
                 </div>
